@@ -56,17 +56,20 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
-    
+
     public boolean equals(SampleClass other){
-            //code here
-                return (this == other); 
+            if(this.a == other.a){
+                return b;
+            }else{
+                return !b;
+            }
             
          }
     //    implement a custom .toString(){} method here.
     @Override
     public String toString(){
           //code here
-          return "overridden toString method should display both variables in the class.";
+          return "overridden toString method should display both variables in the class. " ;
 
          }
 
