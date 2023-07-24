@@ -58,7 +58,7 @@ public class SampleClass {
     //    implement a custom .equals(SampleClass other){} method here.
 
     public boolean equals(SampleClass other){
-            if(this.a == other.a){
+            if(this.a == other.a && this.b == other.b){
                 return true;
             }else{
                 return false;
