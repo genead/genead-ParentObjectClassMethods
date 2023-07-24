@@ -59,9 +59,9 @@ public class SampleClass {
 
     public boolean equals(SampleClass other){
             if(this.a == other.a){
-                return b;
+                return true;
             }else{
-                return !b;
+                return false;
             }
             
          }
@@ -69,7 +69,8 @@ public class SampleClass {
     @Override
     public String toString(){
           //code here
-          return "overridden toString method should display both variables in the class. " ;
+        //   return "overridden toString method should display both variables in the class. " ;
+        return a + " " + b;
 
          }
 
